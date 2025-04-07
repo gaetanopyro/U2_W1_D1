@@ -38,6 +38,7 @@ header nav ul {
 }
 header nav li {
   list-style: none;
+  display: inline-block;
 }
 header nav li a {
   color: white;
@@ -69,6 +70,7 @@ section h2 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1em;
+  background-color: #b6b2b2;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -109,23 +111,6 @@ code {
   background-color: #e3e3e3;
   border: 1px solid #969494;
   border-radius: 5px;
-}
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  section {
-    float: left;
-    width: 50%;
-    margin-right: 2%;
-    margin-bottom: 0;
-    display: block;
-    overflow: auto;
-  }
-
-  iframe {
-    float: left;
-    width: 48%;
-    height: auto;
-    margin-bottom: 0;
-  }
 }
 iframe {
   width: 100%;
@@ -179,19 +164,6 @@ button {
   color: white;
   font-weight: bold;
 }
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  aside h2,
-  aside div,
-  aside div p {
-    float: left;
-    width: 28%;
-    margin-bottom: 0;
-    display: block;
-    overflow: auto;
-  }
-}
-
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
   text-align: center;
@@ -225,4 +197,57 @@ footer {
 }
 footer a {
   color: fuchsia;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.6rem;
+    max-width: 500px;
+  }
+  fieldset input {
+    padding: 1.5rem;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    text-align: unset;
+  }
+  header div {
+    width: 50%;
+    margin-right: -4%;
+  }
+  header nav {
+    width: 50%;
+    margin-right: -4%;
+    text-align: right;
+  }
+  header div,
+  header div p,
+  header nav {
+    display: inline-block;
+  }
+  header div img {
+    vertical-align: middle;
+  }
+  iframe {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
+    margin-right: -4px;
+    min-height: 200px;
+  }
+  section {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
+    margin-right: -4px;
+    min-height: 200px;
+    margin-bottom: 0;
+  }
+  aside div {
+    display: inline-block;
+    width: 33%;
+  }
 }
