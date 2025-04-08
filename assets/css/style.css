@@ -251,3 +251,15 @@ footer a {
     width: 33%;
   }
 }
+@media print {
+  header,
+  section,
+  aside,
+  footer,
+  hr {
+    display: none;
+  }
+  section {
+    display: none !important;
+  }
+}
