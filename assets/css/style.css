@@ -256,7 +256,8 @@ footer a {
   section,
   aside,
   footer,
-  hr {
+  hr,
+  iframe {
     display: none;
   }
   section {
